@@ -1,0 +1,1155 @@
+{% extends 'portal/base.html' %}
+
+{% block title %}Tipos - ArduinoHub{% endblock %}
+
+{% block content %}
+
+<!-- =========================================================
+     ENCABEZADO
+========================================================= -->
+
+<section class="py-5">
+    <div class="container">
+
+        <div class="section-head">
+            <h1 class="section-title">Actividades y Automatizaciones</h1>
+            <p class="section-note">
+                Descubrí todo lo que podés construir con Arduino,
+                desde proyectos sencillos hasta sistemas avanzados de robótica y automatización.
+            </p>
+        </div>
+
+        <!-- INTRODUCCIÓN -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-9">
+                <div class="card card-proyecto border-0 shadow-sm">
+                    <div class="card-body p-4 p-lg-5 text-center">
+
+                        <div class="icon-circle mx-auto mb-4"></div>
+
+                        <h2 class="mb-3">¿Qué podés hacer con Arduino?</h2>
+
+                        <p class="text-muted mb-0">
+                            Arduino permite crear sistemas capaces de recibir información
+                            mediante sensores, procesarla mediante un programa y realizar
+                            diferentes acciones automáticamente.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- =====================================================
+             ACTIVIDADES
+        ====================================================== -->
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+
+            <!-- 1. ILUMINACIÓN -->
+            <div class="col">
+                <div class="card card-proyecto h-100">
+
+                    <div class="card-img-block">
+                        <div class="icon-circle">💡</div>
+                    </div>
+
+                    <div class="card-body">
+                        <span class="badge bg-dark mb-2">Automatización</span>
+
+                        <h5 class="card-title">
+                            Sistema de iluminación automática
+                        </h5>
+
+                        <p class="card-text">
+                            Enciende y apaga una luz automáticamente utilizando
+                            un sensor de luz LDR.
+                        </p>
+
+                        <hr>
+
+                        <h6>¿Cómo funciona?</h6>
+
+                        <p class="small text-muted">
+                            Luz ambiental → Sensor LDR → Arduino → LED o lámpara.
+                        </p>
+
+                        <ul class="small">
+                            <li>Arduino Uno o Nano</li>
+                            <li>Sensor LDR</li>
+                            <li>Resistencias</li>
+                            <li>LED</li>
+                            <li>Cables y protoboard</li>
+                        </ul>
+
+                        <p class="small mb-0">
+                            <strong>Aplicaciones:</strong>
+                            habitaciones, jardines, pasillos y ahorro energético.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="badge badge-accent">⭐ Principiante</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- 2. RIEGO -->
+            <div class="col">
+                <div class="card card-proyecto h-100">
+
+                    <div class="card-img-block">
+                        <div class="icon-circle">🌱</div>
+                    </div>
+
+                    <div class="card-body">
+                        <span class="badge bg-dark mb-2">Automatización</span>
+
+                        <h5 class="card-title">
+                            Sistema de riego automático
+                        </h5>
+
+                        <p class="card-text">
+                            Controla automáticamente el riego de una planta
+                            según la humedad del suelo.
+                        </p>
+
+                        <hr>
+
+                        <h6>Funcionamiento</h6>
+
+                        <p class="small text-muted">
+                            Tierra → Sensor de humedad → Arduino → Relé → Bomba.
+                        </p>
+
+                        <ol class="small">
+                            <li>El sensor mide la humedad.</li>
+                            <li>Arduino recibe el valor.</li>
+                            <li>Compara el valor con un límite.</li>
+                            <li>Si la tierra está seca, activa el relé.</li>
+                            <li>La bomba suministra agua.</li>
+                        </ol>
+
+                        <p class="small mb-0">
+                            <strong>Se aprende:</strong>
+                            sensores, condicionales, automatización, relés
+                            y lectura analógica.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="badge badge-accent">⭐⭐ Principiante / Intermedio</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- 3. ROBOT -->
+            <div class="col">
+                <div class="card card-proyecto h-100">
+
+                    <div class="card-img-block">
+                        <div class="icon-circle">🚗</div>
+                    </div>
+
+                    <div class="card-body">
+                        <span class="badge bg-dark mb-2">Robótica</span>
+
+                        <h5 class="card-title">
+                            Auto robot evita-obstáculos
+                        </h5>
+
+                        <p class="card-text">
+                            Robot autónomo que utiliza sensores para detectar
+                            obstáculos y motores para desplazarse.
+                        </p>
+
+                        <hr>
+
+                        <h6>Funcionamiento</h6>
+
+                        <p class="small text-muted">
+                            Sensor ultrasónico → Arduino →
+                            Driver de motores → Motores.
+                        </p>
+
+                        <ul class="small">
+                            <li>Más de 30 cm → avanzar</li>
+                            <li>Menos de 30 cm → detenerse</li>
+                            <li>Menos de 15 cm → retroceder y girar</li>
+                        </ul>
+
+                        <p class="small mb-0">
+                            Se puede ampliar con Bluetooth, cámara,
+                            sensores laterales, encoders y navegación.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="badge badge-accent">⭐⭐⭐⭐ Intermedio / Avanzado</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- 4. SEMÁFORO -->
+            <div class="col">
+                <div class="card card-proyecto h-100">
+
+                    <div class="card-img-block">
+                        <div class="icon-circle">🚦</div>
+                    </div>
+
+                    <div class="card-body">
+                        <span class="badge bg-dark mb-2">Automatización</span>
+
+                        <h5 class="card-title">
+                            Semáforo inteligente
+                        </h5>
+
+                        <p class="card-text">
+                            Sistema automatizado que controla luces de tránsito
+                            y puede adaptarse mediante sensores.
+                        </p>
+
+                        <hr>
+
+                        <h6>Versión básica</h6>
+
+                        <p class="small">
+                            🔴 Rojo · 🟡 Amarillo · 🟢 Verde
+                        </p>
+
+                        <h6>Versión avanzada</h6>
+
+                        <p class="small text-muted">
+                            Sensor → Arduino → Semáforo.
+                            Los sensores pueden detectar vehículos y modificar
+                            los tiempos.
+                        </p>
+
+                        <p class="small mb-0">
+                            <strong>Se aprende:</strong>
+                            temporizadores, estados, condicionales y sensores.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="badge badge-accent">⭐ a ⭐⭐⭐⭐</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- 5. ESTACIÓN METEOROLÓGICA -->
+            <div class="col">
+                <div class="card card-proyecto h-100">
+
+                    <div class="card-img-block">
+                        <div class="icon-circle">🌡️</div>
+                    </div>
+
+                    <div class="card-body">
+                        <span class="badge bg-dark mb-2">Sensores</span>
+
+                        <h5 class="card-title">
+                            Estación meteorológica
+                        </h5>
+
+                        <p class="card-text">
+                            Recopila información ambiental mediante diferentes
+                            sensores y muestra los datos en una pantalla.
+                        </p>
+
+                        <hr>
+
+                        <ul class="small">
+                            <li>🌡️ Temperatura</li>
+                            <li>💧 Humedad</li>
+                            <li>🌬️ Presión atmosférica</li>
+                            <li>☀️ Intensidad de luz</li>
+                            <li>🌧️ Lluvia</li>
+                        </ul>
+
+                        <p class="small">
+                            Los datos también pueden guardarse o enviarse
+                            mediante Wi-Fi o Bluetooth.
+                        </p>
+
+                        <div class="bg-light rounded p-3 small">
+                            <strong>Ejemplo:</strong><br>
+                            08:00 → 21 °C<br>
+                            10:00 → 24 °C<br>
+                            12:00 → 27 °C<br>
+                            14:00 → 29 °C
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="badge badge-accent">⭐⭐⭐ Intermedio</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- 6. CASA INTELIGENTE -->
+            <div class="col">
+                <div class="card card-proyecto h-100">
+
+                    <div class="card-img-block">
+                        <div class="icon-circle">🏠</div>
+                    </div>
+
+                    <div class="card-body">
+                        <span class="badge bg-dark mb-2">IoT</span>
+
+                        <h5 class="card-title">
+                            Casa inteligente
+                        </h5>
+
+                        <p class="card-text">
+                            Arduino puede controlar diferentes elementos
+                            automatizados de una vivienda.
+                        </p>
+
+                        <hr>
+
+                        <ul class="small">
+                            <li>💡 Luces</li>
+                            <li>🚪 Puertas</li>
+                            <li>🪟 Persianas</li>
+                            <li>🌡️ Temperatura</li>
+                            <li>🔔 Alarmas</li>
+                            <li>🌱 Riego</li>
+                            <li>🔌 Dispositivos eléctricos</li>
+                        </ul>
+
+                        <p class="small mb-0">
+                            Con Wi-Fi también se pueden controlar determinadas
+                            funciones desde un celular.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="badge badge-accent">⭐⭐⭐⭐ Intermedio / Avanzado</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- 7. ALARMA -->
+            <div class="col">
+                <div class="card card-proyecto h-100">
+
+                    <div class="card-img-block">
+                        <div class="icon-circle">🔐</div>
+                    </div>
+
+                    <div class="card-body">
+                        <span class="badge bg-dark mb-2">Seguridad</span>
+
+                        <h5 class="card-title">
+                            Sistema de alarma
+                        </h5>
+
+                        <p class="card-text">
+                            Detecta determinadas situaciones y activa una
+                            alarma mediante sensores.
+                        </p>
+
+                        <hr>
+
+                        <h6>Funcionamiento</h6>
+
+                        <p class="small text-muted">
+                            Sensor → Arduino → Decisión → Alarma.
+                        </p>
+
+                        <ul class="small">
+                            <li>Sensor de movimiento</li>
+                            <li>Sensor magnético</li>
+                            <li>Sensor de vibración</li>
+                            <li>Sensor de humo</li>
+                            <li>Sensor de gas apropiado</li>
+                        </ul>
+
+                        <p class="small mb-0">
+                            También puede incorporar un teclado para
+                            introducir un código de seguridad.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="badge badge-accent">⭐⭐⭐ Intermedio</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- 8. PUERTA -->
+            <div class="col">
+                <div class="card card-proyecto h-100">
+
+                    <div class="card-img-block">
+                        <div class="icon-circle">🚪</div>
+                    </div>
+
+                    <div class="card-body">
+                        <span class="badge bg-dark mb-2">Automatización</span>
+
+                        <h5 class="card-title">
+                            Puerta automática
+                        </h5>
+
+                        <p class="card-text">
+                            Una puerta pequeña puede abrirse automáticamente
+                            cuando un sensor detecta que alguien se aproxima.
+                        </p>
+
+                        <hr>
+
+                        <p class="small text-muted">
+                            Sensor → Arduino → Servomotor → Puerta.
+                        </p>
+
+                        <ul class="small">
+                            <li>Sensor ultrasónico</li>
+                            <li>Sensor PIR</li>
+                            <li>Servomotor</li>
+                            <li>LED indicador</li>
+                            <li>Buzzer</li>
+                            <li>Botón manual</li>
+                        </ul>
+
+                        <p class="small mb-0">
+                            Sirve como introducción a puertas, barreras,
+                            portones y sistemas de acceso automáticos.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="badge badge-accent">⭐⭐⭐ Intermedio</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- 9. ESTACIONAMIENTO -->
+            <div class="col">
+                <div class="card card-proyecto h-100">
+
+                    <div class="card-img-block">
+                        <div class="icon-circle">🅿️</div>
+                    </div>
+
+                    <div class="card-body">
+                        <span class="badge bg-dark mb-2">Automatización</span>
+
+                        <h5 class="card-title">
+                            Estacionamiento inteligente
+                        </h5>
+
+                        <p class="card-text">
+                            Maqueta que detecta qué lugares están libres
+                            y cuáles están ocupados.
+                        </p>
+
+                        <hr>
+
+                        <p class="small text-muted">
+                            Sensor → Arduino → Estado del estacionamiento.
+                        </p>
+
+                        <div class="bg-light rounded p-3 small mb-3">
+                            ESPACIO 1 → LIBRE<br>
+                            ESPACIO 2 → OCUPADO<br>
+                            ESPACIO 3 → LIBRE<br>
+                            ESPACIO 4 → OCUPADO
+                        </div>
+
+                        <p class="small mb-0">
+                            Puede incorporar barrera automática, sensores
+                            de entrada y salida, pantalla, LEDs y contador.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="badge badge-accent">⭐⭐⭐⭐ Intermedio / Avanzado</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- 10. BRAZO ROBÓTICO -->
+            <div class="col">
+                <div class="card card-proyecto h-100">
+
+                    <div class="card-img-block">
+                        <div class="icon-circle">🦾</div>
+                    </div>
+
+                    <div class="card-body">
+                        <span class="badge bg-dark mb-2">Robótica</span>
+
+                        <h5 class="card-title">
+                            Brazo robótico
+                        </h5>
+
+                        <p class="card-text">
+                            Controla varios servomotores para realizar
+                            diferentes movimientos.
+                        </p>
+
+                        <hr>
+
+                        <ul class="small">
+                            <li>Giro de la base</li>
+                            <li>Movimiento del brazo</li>
+                            <li>Movimiento del antebrazo</li>
+                            <li>Movimiento de la muñeca</li>
+                            <li>Apertura de la pinza</li>
+                        </ul>
+
+                        <div class="bg-light rounded p-3 small mb-3">
+                            Base → 90°<br>
+                            Brazo → 60°<br>
+                            Antebrazo → 120°<br>
+                            Pinza → 30°
+                        </div>
+
+                        <p class="small mb-0">
+                            Puede ampliarse con joystick, sensores,
+                            Bluetooth, cámara y secuencias automáticas.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="badge badge-accent">⭐⭐⭐⭐⭐ Avanzado</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- 11. LÍNEA DE PRODUCCIÓN -->
+            <div class="col">
+                <div class="card card-proyecto h-100">
+
+                    <div class="card-img-block">
+                        <div class="icon-circle">🏭</div>
+                    </div>
+
+                    <div class="card-body">
+                        <span class="badge bg-dark mb-2">Industria</span>
+
+                        <h5 class="card-title">
+                            Línea de producción automatizada
+                        </h5>
+
+                        <p class="card-text">
+                            Maqueta de una fábrica donde sensores y motores
+                            trabajan automáticamente.
+                        </p>
+
+                        <hr>
+
+                        <p class="small text-muted">
+                            Sensor → Arduino → Motor → Banda transportadora.
+                        </p>
+
+                        <ol class="small">
+                            <li>Detectar el objeto.</li>
+                            <li>Detener la cinta.</li>
+                            <li>Activar un servomotor.</li>
+                            <li>Clasificar el objeto.</li>
+                            <li>Reactivar la cinta.</li>
+                        </ol>
+
+                        <p class="small mb-0">
+                            Introduce conceptos de automatización industrial,
+                            control de procesos, sensores y actuadores.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="badge badge-accent">⭐⭐⭐⭐⭐ Avanzado</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- 12. CONTROLADOR -->
+            <div class="col">
+                <div class="card card-proyecto h-100">
+
+                    <div class="card-img-block">
+                        <div class="icon-circle">🎮</div>
+                    </div>
+
+                    <div class="card-body">
+                        <span class="badge bg-dark mb-2">Interfaces</span>
+
+                        <h5 class="card-title">
+                            Controlador personalizado
+                        </h5>
+
+                        <p class="card-text">
+                            Construye controles físicos para videojuegos,
+                            simuladores y diferentes aplicaciones.
+                        </p>
+
+                        <hr>
+
+                        <ul class="small">
+                            <li>Joystick</li>
+                            <li>Botones</li>
+                            <li>Potenciómetros</li>
+                            <li>LEDs</li>
+                            <li>Interruptores</li>
+                        </ul>
+
+                        <p class="small mb-0">
+                            También se pueden crear paneles de control,
+                            teclados macro, controladores MIDI e interfaces
+                            educativas.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="badge badge-accent">⭐⭐⭐ Intermedio</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- 13. ROBOT CELULAR -->
+            <div class="col">
+                <div class="card card-proyecto h-100">
+
+                    <div class="card-img-block">
+                        <div class="icon-circle">📱</div>
+                    </div>
+
+                    <div class="card-body">
+                        <span class="badge bg-dark mb-2">Bluetooth / Wi-Fi</span>
+
+                        <h5 class="card-title">
+                            Robot controlado desde un celular
+                        </h5>
+
+                        <p class="card-text">
+                            Permite controlar un robot mediante Bluetooth
+                            o Wi-Fi desde un teléfono.
+                        </p>
+
+                        <hr>
+
+                        <div class="bg-light rounded p-3 small mb-3 text-center">
+                            CELULAR<br>
+                            ↓<br>
+                            Bluetooth / Wi-Fi<br>
+                            ↓<br>
+                            ARDUINO<br>
+                            ↓<br>
+                            MOTORES
+                        </div>
+
+                        <p class="small">
+                            A → Adelante<br>
+                            B → Atrás<br>
+                            I → Izquierda<br>
+                            D → Derecha<br>
+                            S → Detener
+                        </p>
+
+                        <p class="small mb-0">
+                            Puede incorporar cámara, luces, bocina,
+                            medición de batería y control de velocidad.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="badge badge-accent">⭐⭐⭐⭐</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- 14. ALIMENTADOR -->
+            <div class="col">
+                <div class="card card-proyecto h-100">
+
+                    <div class="card-img-block">
+                        <div class="icon-circle">🐟</div>
+                    </div>
+
+                    <div class="card-body">
+                        <span class="badge bg-dark mb-2">Automatización</span>
+
+                        <h5 class="card-title">
+                            Alimentador automático
+                        </h5>
+
+                        <p class="card-text">
+                            Libera automáticamente una cantidad determinada
+                            de alimento según un horario programado.
+                        </p>
+
+                        <hr>
+
+                        <div class="bg-light rounded p-3 small mb-3">
+                            08:00 → alimentar<br>
+                            14:00 → alimentar<br>
+                            20:00 → alimentar
+                        </div>
+
+                        <p class="small">
+                            Cuando llega la hora, Arduino activa un
+                            servomotor que libera una porción.
+                        </p>
+
+                        <p class="small mb-0">
+                            Se puede agregar pantalla, botones,
+                            reloj de tiempo real, sensor de nivel
+                            y control desde celular.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="badge badge-accent">⭐⭐⭐</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- 15. BASURERO -->
+            <div class="col">
+                <div class="card card-proyecto h-100">
+
+                    <div class="card-img-block">
+                        <div class="icon-circle">🗑️</div>
+                    </div>
+
+                    <div class="card-body">
+                        <span class="badge bg-dark mb-2">Automatización</span>
+
+                        <h5 class="card-title">
+                            Basurero automático
+                        </h5>
+
+                        <p class="card-text">
+                            Abre automáticamente su tapa cuando detecta
+                            que una persona acerca la mano.
+                        </p>
+
+                        <hr>
+
+                        <p class="small text-muted">
+                            Sensor de distancia → Arduino →
+                            Servomotor → Tapa.
+                        </p>
+
+                        <ol class="small">
+                            <li>Arduino recibe la distancia.</li>
+                            <li>Comprueba el rango.</li>
+                            <li>Activa el servomotor.</li>
+                            <li>La tapa se abre.</li>
+                            <li>Después de unos segundos se cierra.</li>
+                        </ol>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="badge badge-accent">⭐⭐ Principiante / Intermedio</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- 16. TEMPERATURA -->
+            <div class="col">
+                <div class="card card-proyecto h-100">
+
+                    <div class="card-img-block">
+                        <div class="icon-circle">🌡️</div>
+                    </div>
+
+                    <div class="card-body">
+                        <span class="badge bg-dark mb-2">Control automático</span>
+
+                        <h5 class="card-title">
+                            Control automático de temperatura
+                        </h5>
+
+                        <p class="card-text">
+                            Mantiene la temperatura dentro de determinados
+                            límites mediante sensores y actuadores.
+                        </p>
+
+                        <hr>
+
+                        <div class="bg-light rounded p-3 small mb-3 text-center">
+                            Temperatura &lt; 20 °C<br>
+                            ↓<br>
+                            🔥 Calefacción
+                            <br><br>
+                            Temperatura &gt; 25 °C<br>
+                            ↓<br>
+                            💨 Ventilador
+                        </div>
+
+                        <p class="small">
+                            Aplicaciones educativas:
+                            invernaderos, ventilación, incubadoras
+                            y control ambiental.
+                        </p>
+
+                        <div class="alert alert-warning small mb-0">
+                            ⚠️ En aplicaciones reales con calefacción o
+                            tensión de red se necesitan componentes y
+                            medidas de seguridad adecuados. Arduino no
+                            debe conectarse directamente a cargas de
+                            alta tensión.
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="badge badge-accent">⭐⭐⭐⭐</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================================================
+     CÓMO FUNCIONA UNA AUTOMATIZACIÓN
+========================================================= -->
+
+<section class="py-5 bg-light">
+    <div class="container">
+
+        <div class="section-head">
+            <h2 class="section-title">
+                🧠 ¿Cómo funcionan estas automatizaciones?
+            </h2>
+
+            <p class="section-note">
+                La mayoría de los proyectos Arduino pueden entenderse
+                mediante tres elementos principales.
+            </p>
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- ENTRADA -->
+            <div class="col-md-4">
+                <div class="card card-proyecto h-100 border-0 shadow-sm">
+
+                    <div class="card-body text-center p-4">
+
+                        <div class="icon-circle mx-auto mb-3">
+                            📥
+                        </div>
+
+                        <h4>1. Entrada</h4>
+
+                        <p class="text-muted">
+                            Arduino recibe información desde diferentes
+                            sensores o dispositivos.
+                        </p>
+
+                        <ul class="list-unstyled small">
+                            <li>💡 Sensor de luz</li>
+                            <li>🌡️ Sensor de temperatura</li>
+                            <li>👤 Sensor de movimiento</li>
+                            <li>🔘 Botón</li>
+                            <li>🎮 Joystick</li>
+                            <li>📏 Sensor de distancia</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- PROCESAMIENTO -->
+            <div class="col-md-4">
+                <div class="card card-proyecto h-100 border-0 shadow-sm">
+
+                    <div class="card-body text-center p-4">
+
+                        <div class="icon-circle mx-auto mb-3">
+                            🧠
+                        </div>
+
+                        <h4>2. Procesamiento</h4>
+
+                        <p class="text-muted">
+                            Arduino ejecuta el programa y toma una decisión
+                            utilizando la información recibida.
+                        </p>
+
+                        <div class="bg-dark text-white rounded p-3 text-start small">
+                            SI temperatura &gt; 30 °C
+                            <br>
+                            ENTONCES
+                            <br>
+                            encender ventilador
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- SALIDA -->
+            <div class="col-md-4">
+                <div class="card card-proyecto h-100 border-0 shadow-sm">
+
+                    <div class="card-body text-center p-4">
+
+                        <div class="icon-circle mx-auto mb-3">
+                            📤
+                        </div>
+
+                        <h4>3. Salida</h4>
+
+                        <p class="text-muted">
+                            Arduino realiza una acción utilizando
+                            diferentes actuadores.
+                        </p>
+
+                        <ul class="list-unstyled small">
+                            <li>💡 Encender un LED</li>
+                            <li>⚙️ Mover un servo</li>
+                            <li>🔄 Activar un motor</li>
+                            <li>🔊 Encender un buzzer</li>
+                            <li>📺 Mostrar información</li>
+                            <li>🔌 Activar un relé apropiado</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- FLUJO -->
+        <div class="text-center mt-5">
+
+            <div class="card card-proyecto border-0 shadow-sm d-inline-block">
+                <div class="card-body px-4 px-md-5 py-4">
+
+                    <h3 class="mb-0">
+                        📥 ENTRADA
+                        <span class="mx-2">→</span>
+                        🧠 PROCESAMIENTO
+                        <span class="mx-2">→</span>
+                        📤 SALIDA
+                    </h3>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     PROYECTOS SEGÚN DIFICULTAD
+========================================================= -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="section-head">
+            <h2 class="section-title">
+                🚀 Proyectos según dificultad
+            </h2>
+
+            <p class="section-note">
+                Una guía rápida para elegir una actividad según tu nivel.
+            </p>
+        </div>
+
+
+        <div class="table-responsive">
+
+            <table class="table table-hover align-middle">
+
+                <thead class="table-dark">
+                    <tr>
+                        <th>Proyecto</th>
+                        <th>Dificultad</th>
+                        <th>Principales elementos</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>🚦 Semáforo</td>
+                        <td>⭐</td>
+                        <td>LEDs</td>
+                    </tr>
+
+                    <tr>
+                        <td>💡 Luz automática</td>
+                        <td>⭐⭐</td>
+                        <td>LDR + LED</td>
+                    </tr>
+
+                    <tr>
+                        <td>🗑️ Basurero automático</td>
+                        <td>⭐⭐</td>
+                        <td>Sensor + servo</td>
+                    </tr>
+
+                    <tr>
+                        <td>🌱 Riego automático</td>
+                        <td>⭐⭐</td>
+                        <td>Humedad + bomba</td>
+                    </tr>
+
+                    <tr>
+                        <td>🔐 Alarma</td>
+                        <td>⭐⭐⭐</td>
+                        <td>Sensores + buzzer</td>
+                    </tr>
+
+                    <tr>
+                        <td>🌡️ Estación meteorológica</td>
+                        <td>⭐⭐⭐</td>
+                        <td>Sensores + pantalla</td>
+                    </tr>
+
+                    <tr>
+                        <td>🐟 Alimentador automático</td>
+                        <td>⭐⭐⭐</td>
+                        <td>Servo + reloj</td>
+                    </tr>
+
+                    <tr>
+                        <td>🚪 Puerta automática</td>
+                        <td>⭐⭐⭐</td>
+                        <td>Sensor + servo</td>
+                    </tr>
+
+                    <tr>
+                        <td>📱 Robot Bluetooth</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>Bluetooth + motores</td>
+                    </tr>
+
+                    <tr>
+                        <td>🏠 Casa inteligente</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>Sensores + Wi-Fi</td>
+                    </tr>
+
+                    <tr>
+                        <td>🅿️ Estacionamiento inteligente</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>Sensores + pantalla</td>
+                    </tr>
+
+                    <tr>
+                        <td>🚗 Robot evita-obstáculos</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>Ultrasonido + motores</td>
+                    </tr>
+
+                    <tr>
+                        <td>🦾 Brazo robótico</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>Servomotores</td>
+                    </tr>
+
+                    <tr>
+                        <td>🏭 Línea de producción</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>Sensores + motores</td>
+                    </tr>
+
+                    <tr>
+                        <td>👁️ Visión artificial / IA</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>Cámara + placa potente</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CIERRE
+========================================================= -->
+
+<section class="py-5 bg-dark text-white">
+
+    <div class="container">
+
+        <div class="row justify-content-center text-center">
+
+            <div class="col-lg-8">
+
+                <div class="icon-circle mx-auto mb-4">
+                    🚀
+                </div>
+
+                <h2 class="mb-3">
+                    ¿Listo para construir?
+                </h2>
+
+                <p class="lead mb-4">
+                    Elegí una actividad según tu nivel y comenzá a experimentar
+                    con sensores, programación, electrónica y automatización.
+                </p>
+
+                <a href="{% url 'proyectos' %}"
+                   class="btn btn-light btn-lg">
+                    Ver proyectos →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

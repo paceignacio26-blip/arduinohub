@@ -1,0 +1,125 @@
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="{% url 'inicio' %}">
+            🤖 Arduino
+        </a>
+
+        <!-- Botón para móviles -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Mostrar navegación">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto align-items-center gap-2">
+
+                <!-- INICIO -->
+                <li class="nav-item">
+                    <a href="{% url 'inicio' %}" class="animated-button">
+
+                        <svg class="arr-2"
+                             viewBox="0 0 24 24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.939 7.939L15.525 9.353 18.172 12 15.525 14.647 16.939 16.061 21 12z"></path>
+                        </svg>
+
+                        <span class="text">🏠 Inicio</span>
+
+                        <span class="circle"></span>
+
+                        <svg class="arr-1"
+                             viewBox="0 0 24 24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.939 7.939L15.525 9.353 18.172 12 15.525 14.647 16.939 16.061 21 12z"></path>
+                        </svg>
+
+                    </a>
+                </li>
+
+
+                <!-- PROYECTOS -->
+                <li class="nav-item">
+                    <a href="{% url 'proyectos' %}" class="animated-button">
+
+                        <svg class="arr-2"
+                             viewBox="0 0 24 24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.939 7.939L15.525 9.353 18.172 12 15.525 14.647 16.939 16.061 21 12z"></path>
+                        </svg>
+
+                        <span class="text">🔧 Proyectos</span>
+
+                        <span class="circle"></span>
+
+                        <svg class="arr-1"
+                             viewBox="0 0 24 24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.939 7.939L15.525 9.353 18.172 12 15.525 14.647 16.939 16.061 21 12z"></path>
+                        </svg>
+
+                    </a>
+                </li>
+
+
+                <!-- TIPOS -->
+                <li class="nav-item">
+                    <a href="{% url 'tipos' %}" class="animated-button">
+
+                        <svg class="arr-2"
+                             viewBox="0 0 24 24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.939 7.939L15.525 9.353 18.172 12 15.525 14.647 16.939 16.061 21 12z"></path>
+                        </svg>
+
+                        <span class="text">🔌 Tipos</span>
+
+                        <span class="circle"></span>
+
+                        <svg class="arr-1"
+                             viewBox="0 0 24 24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.939 7.939L15.525 9.353 18.172 12 15.525 14.647 16.939 16.061 21 12z"></path>
+                        </svg>
+
+                    </a>
+                </li>
+
+
+                <!-- INFORMACIÓN SOBRE MÍ -->
+                <li class="nav-item">
+                    <a href="{% url 'quiensoy' %}" class="animated-button">
+
+                        <svg class="arr-2"
+                             viewBox="0 0 24 24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.939 7.939L15.525 9.353 18.172 12 15.525 14.647 16.939 16.061 21 12z"></path>
+                        </svg>
+
+                        <span class="text">👤 Información sobre mí</span>
+
+                        <span class="circle"></span>
+
+                        <svg class="arr-1"
+                             viewBox="0 0 24 24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.939 7.939L15.525 9.353 18.172 12 15.525 14.647 16.939 16.061 21 12z"></path>
+                        </svg>
+
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>

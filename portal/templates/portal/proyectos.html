@@ -1,0 +1,1427 @@
+{% extends 'portal/base.html' %}
+{% block title %}Proyectos - ArduinoHub{% endblock %}
+{% block content %}
+
+<!-- =========================================================
+     ENCABEZADO
+========================================================= -->
+<section class="py-5">
+    <div class="container">
+
+        <div class="section-head">
+            <span class="text-uppercase fw-bold small">
+                Guía de placas
+            </span>
+
+            <h1 class="section-title">
+                🔌 Tipos de Arduino
+            </h1>
+
+            <p class="section-note">
+                Arduino tiene muchísimos modelos y cada uno está pensado
+                para diferentes tipos de proyectos. Descubrí sus características
+                y elegí la placa adecuada para tu proyecto.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     ARDUINO UNO
+========================================================= -->
+<section class="py-5 bg-light">
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-5">
+
+                <img
+                    src="https://images.openai.com/static-rsc-4/IRB-G0twaC3Sd-F0n98UabYodMwXd3ThiCclWHJLzcYQWZEp5FFKr6ZDh7ZKwld65fpJBaLskhPmmMWdspYXI3cYLHJNfOOwHf-fMbzRn8LLdRjCj-pJPFNjDrI35umiNKlSjeqG52TckoDzqw8toI1OQ2cZsx2R0oRPvlybTX-QugyrdxAhkaAVy91QPqPw?purpose=fullsize"
+                    class="img-fluid rounded-4 shadow-sm"
+                    alt="Arduino Uno"
+                >
+
+            </div>
+
+            <div class="col-lg-7">
+
+                <span class="badge bg-dark mb-3">
+                    01 · PRINCIPIANTE
+                </span>
+
+                <h2 class="display-6 fw-bold">
+                    Arduino Uno
+                </h2>
+
+                <p>
+                    El <strong>Arduino Uno</strong> es probablemente el modelo
+                    más conocido y utilizado para aprender Arduino.
+                </p>
+
+                <div class="row g-3 my-3">
+
+                    <div class="col-sm-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body">
+                                <strong>ATmega328P</strong>
+                                <small class="d-block text-muted">
+                                    Microcontrolador
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body">
+                                <strong>14</strong>
+                                <small class="d-block text-muted">
+                                    Pines digitales
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body">
+                                <strong>6</strong>
+                                <small class="d-block text-muted">
+                                    Entradas analógicas
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h3 class="h5 fw-bold mt-4">
+                    ¿Para qué sirve?
+                </h3>
+
+                <p>
+                    Es excelente para aprender programación, sensores, LEDs,
+                    motores, servomotores, pantallas y sistemas automáticos.
+                </p>
+
+                <div class="alert alert-dark">
+                    <strong>🚀 Proyecto recomendado:</strong>
+                    Sistema de riego automático.
+                    <br>
+                    Podés conectar un sensor de humedad del suelo y una bomba
+                    de agua para activar el riego cuando la tierra esté seca.
+                </div>
+
+                <span class="badge badge-accent">
+                    Dificultad: ⭐⭐☆☆☆
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     ARDUINO MEGA
+========================================================= -->
+<section class="py-5">
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-7">
+
+                <span class="badge bg-dark mb-3">
+                    02 · MUCHOS COMPONENTES
+                </span>
+
+                <h2 class="display-6 fw-bold">
+                    Arduino Mega 2560
+                </h2>
+
+                <p>
+                    El <strong>Arduino Mega 2560</strong> es mucho más grande
+                    y dispone de una cantidad considerablemente mayor de
+                    entradas y salidas que el Uno.
+                </p>
+
+                <div class="row g-3 my-3">
+
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <strong>54</strong>
+                                <small class="d-block text-muted">
+                                    Pines digitales
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <strong>16</strong>
+                                <small class="d-block text-muted">
+                                    Entradas analógicas
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <strong>4</strong>
+                                <small class="d-block text-muted">
+                                    Puertos seriales
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h3 class="h5 fw-bold mt-4">
+                    ¿Para qué sirve?
+                </h3>
+
+                <p>
+                    Es especialmente útil cuando necesitás conectar muchos
+                    componentes al mismo tiempo: sensores, pantallas,
+                    motores, teclados, relés, servomotores y módulos
+                    de comunicación.
+                </p>
+
+                <div class="alert alert-dark">
+                    <strong>🚀 Proyecto recomendado:</strong>
+                    Robot con múltiples sensores.
+                    <br>
+                    Podés combinar sensores de distancia, sensores de línea,
+                    motores, pantalla LCD, sensores de temperatura y Bluetooth.
+                </div>
+
+                <span class="badge badge-accent">
+                    Dificultad: ⭐⭐⭐⭐☆
+                </span>
+
+            </div>
+
+            <div class="col-lg-5">
+
+                <div class="display-1 text-center">
+                    <img src="https://ar.mouser.com/images/arduino/lrg/A000067_SPL.jpg" alt="">
+                </div>
+
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center p-5">
+                        <h3 class="h4 fw-bold">
+                            
+                            Más entradas y salidas
+                        </h3>
+                        <p class="mb-0">
+                            Ideal para proyectos grandes que necesitan
+                            controlar muchos dispositivos simultáneamente.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     ARDUINO NANO
+========================================================= -->
+<section class="py-5 bg-light">
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-5">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center p-5">
+                        <div class="display-1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmiYJUFomLAKJ9h2vrC6qhx0Pb4XzQYZikboIiPPPz-Q&s=10" alt="" width="400"></div>
+                        <h3 class="h3 fw-bold mt-3">
+                            Pequeño pero útil
+                        </h3>
+                        <p class="mb-0">
+                            El Nano conserva la filosofía del Uno en un
+                            formato mucho más pequeño.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+
+                <span class="badge bg-dark mb-3">
+                    03 · COMPACTO
+                </span>
+
+                <h2 class="display-6 fw-bold">
+                    Arduino Nano
+                </h2>
+
+                <p>
+                    El <strong>Arduino Nano</strong> tiene prácticamente
+                    la misma filosofía del Uno, pero en un formato mucho
+                    más pequeño.
+                </p>
+
+                <h3 class="h5 fw-bold mt-4">
+                    ¿Para qué sirve?
+                </h3>
+
+                <ul>
+                    <li>Robots pequeños.</li>
+                    <li>Wearables.</li>
+                    <li>Sistemas portátiles.</li>
+                    <li>Sensores.</li>
+                    <li>Automatización.</li>
+                    <li>Proyectos escolares.</li>
+                </ul>
+
+                <div class="alert alert-dark">
+                    <strong>🚀 Proyecto recomendado:</strong>
+                    Pulsera inteligente experimental.
+                    <br>
+                    Podés utilizar sensores para medir movimiento,
+                    temperatura o luz y mostrar información mediante
+                    una pequeña pantalla.
+                </div>
+
+                <span class="badge badge-accent">
+                    Dificultad: ⭐⭐⭐☆☆
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     LEONARDO
+========================================================= -->
+<section class="py-5">
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-7">
+
+                <span class="badge bg-dark mb-3">
+                    04 · USB
+                </span>
+
+                <h2 class="display-6 fw-bold">
+                    Arduino Leonardo
+                </h2>
+
+                <p>
+                    El <strong>Arduino Leonardo</strong> utiliza el
+                    microcontrolador <strong>ATmega32U4</strong>.
+                </p>
+
+                <p>
+                    Una característica muy interesante es que puede
+                    comunicarse con una computadora como si fuera un
+                    <strong>teclado o mouse USB</strong>.
+                </p>
+
+                <h3 class="h5 fw-bold mt-4">
+                    ¿Para qué sirve?
+                </h3>
+
+                <ul>
+                    <li>Controladores personalizados.</li>
+                    <li>Teclados.</li>
+                    <li>Macropads.</li>
+                    <li>Joysticks.</li>
+                    <li>Interfaces para videojuegos.</li>
+                    <li>Automatización mediante botones.</li>
+                </ul>
+
+                <div class="alert alert-dark">
+                    <strong>🚀 Proyecto recomendado:</strong>
+                    Controlador para videojuegos.
+                    <br>
+                    Podés construir tu propio joystick con botones
+                    y palancas y conectarlo directamente a una computadora.
+                </div>
+
+                <span class="badge badge-accent">
+                    Dificultad: ⭐⭐⭐☆☆
+                </span>
+
+            </div>
+
+            <div class="col-lg-5">
+
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center p-5">
+                        <div class="display-1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMdPx-a4LV4rxkPvhqVeB3nB4kb_Iv7a56pZt28DoVww&s" alt=""></div>
+                        <h3 class="h4 fw-bold">
+                            USB personalizado
+                        </h3>
+                        <p class="mb-0">
+                            Convertí Arduino en un teclado, mouse,
+                            joystick o controlador.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     ARDUINO MICRO
+========================================================= -->
+<section class="py-5 bg-light">
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-5">
+                <div class="display-1 text-center">
+                    ⌨️
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+
+                <span class="badge bg-dark mb-3">
+                    05 · MUY PEQUEÑO
+                </span>
+
+                <h2 class="display-6 fw-bold">
+                    Arduino Micro
+                </h2>
+
+                <p>
+                    El <strong>Arduino Micro</strong> comparte con Leonardo
+                    la posibilidad de funcionar como dispositivo USB y
+                    resulta interesante para proyectos compactos.
+                </p>
+
+                <div class="alert alert-dark">
+                    <strong>🚀 Proyecto recomendado:</strong>
+                    Teclado macro personalizado.
+                    <br>
+                    Podés crear una pequeña consola con botones físicos
+                    para controlar música, programas, atajos de teclado,
+                    edición de video o juegos.
+                </div>
+
+                <p>
+                    Por ejemplo, un botón podría ejecutar
+                    <code>Ctrl + C</code>, otro <code>Ctrl + V</code>
+                    y otro abrir un programa.
+                </p>
+
+                <span class="badge badge-accent">
+                    Dificultad: ⭐⭐⭐☆☆
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     ARDUINO DUE
+========================================================= -->
+<section class="py-5">
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-7">
+
+                <span class="badge bg-dark mb-3">
+                    06 · 32 BITS
+                </span>
+
+                <h2 class="display-6 fw-bold">
+                    Arduino Due
+                </h2>
+
+                <p>
+                    El <strong>Arduino Due</strong> es bastante más potente
+                    que los modelos clásicos.
+                </p>
+
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body">
+                        <h3 class="h5 fw-bold">
+                            ARM Cortex-M3
+                        </h3>
+                        <p class="mb-0">
+                            Procesador de 32 bits funcionando a
+                            <strong>84 MHz</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <h3 class="h5 fw-bold">
+                    ¿Para qué sirve?
+                </h3>
+
+                <ul>
+                    <li>Procesamiento de señales.</li>
+                    <li>Robótica.</li>
+                    <li>Control de motores.</li>
+                    <li>Proyectos con muchos cálculos.</li>
+                    <li>Sistemas electrónicos más complejos.</li>
+                </ul>
+
+                <div class="alert alert-dark">
+                    <strong>🚀 Proyecto recomendado:</strong>
+                    Robot autónomo avanzado.
+                    <br>
+                    Podés combinar sensores de distancia, motores,
+                    encoders y algoritmos de navegación.
+                </div>
+
+                <span class="badge badge-accent">
+                    Dificultad: ⭐⭐⭐⭐⭐
+                </span>
+
+            </div>
+
+            <div class="col-lg-5">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center p-5">
+                        <div class="display-1">⚡</div>
+                        <h3 class="h4 fw-bold">
+                            Mayor procesamiento
+                        </h3>
+                        <p class="mb-0">
+                            Pensado para proyectos que necesitan
+                            más capacidad de procesamiento.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     MKR WIFI 1010
+========================================================= -->
+<section class="py-5 bg-light">
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-5">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center p-5">
+                        <div class="display-1">📡</div>
+                        <h3 class="h4 fw-bold">
+                            Internet de las cosas
+                        </h3>
+                        <p class="mb-0">
+                            Conectá sensores y dispositivos a Internet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+
+                <span class="badge bg-dark mb-3">
+                    07 · IoT
+                </span>
+
+                <h2 class="display-6 fw-bold">
+                    Arduino MKR WiFi 1010
+                </h2>
+
+                <p>
+                    Este modelo está pensado especialmente para proyectos
+                    relacionados con <strong>Internet de las cosas (IoT)</strong>.
+                </p>
+
+                <p>
+                    Tiene conectividad <strong>Wi-Fi</strong>, lo que permite
+                    enviar información a Internet.
+                </p>
+
+                <h3 class="h5 fw-bold">
+                    ¿Para qué sirve?
+                </h3>
+
+                <ul>
+                    <li>Enviar datos a Internet.</li>
+                    <li>Recibir órdenes remotamente.</li>
+                    <li>Monitorear sensores.</li>
+                    <li>Controlar dispositivos desde una aplicación.</li>
+                    <li>Comunicarse con servicios en la nube.</li>
+                </ul>
+
+                <div class="alert alert-dark">
+                    <strong>🚀 Proyecto recomendado:</strong>
+                    Casa inteligente.
+                    <br>
+                    Sensores de temperatura, movimiento y luz pueden
+                    enviar información mediante Wi-Fi y permitir el
+                    control de dispositivos desde el teléfono.
+                </div>
+
+                <span class="badge badge-accent">
+                    Dificultad: ⭐⭐⭐⭐☆
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     PORTENTA H7
+========================================================= -->
+<section class="py-5">
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-7">
+
+                <span class="badge bg-dark mb-3">
+                    08 · PROFESIONAL
+                </span>
+
+                <h2 class="display-6 fw-bold">
+                    Arduino Portenta H7
+                </h2>
+
+                <p>
+                    El <strong>Portenta H7</strong> pertenece a una familia
+                    mucho más potente de Arduino y está orientado a
+                    aplicaciones profesionales y sistemas embebidos avanzados.
+                </p>
+
+                <p>
+                    Tiene un procesador de arquitectura
+                    <strong>STM32H747</strong>, con dos núcleos.
+                </p>
+
+                <h3 class="h5 fw-bold">
+                    ¿Para qué sirve?
+                </h3>
+
+                <ul>
+                    <li>Inteligencia artificial en dispositivos.</li>
+                    <li>Visión artificial.</li>
+                    <li>Robótica avanzada.</li>
+                    <li>Automatización industrial.</li>
+                    <li>Sistemas IoT profesionales.</li>
+                    <li>Procesamiento de datos.</li>
+                    <li>Control de maquinaria.</li>
+                </ul>
+
+                <div class="alert alert-dark">
+                    <strong>🚀 Proyecto recomendado:</strong>
+                    Sistema de visión artificial.
+                    <br>
+                    Cámara → procesamiento → detección → acción.
+                    <br>
+                    El sistema detecta un objeto, determina qué es y
+                    activa un motor o mecanismo.
+                </div>
+
+                <span class="badge badge-accent">
+                    Dificultad: ⭐⭐⭐⭐⭐
+                </span>
+
+            </div>
+
+            <div class="col-lg-5">
+
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center p-5">
+
+                        <div class="display-1">
+                            👁️
+                        </div>
+
+                        <h3 class="h4 fw-bold">
+                            Visión y procesamiento
+                        </h3>
+
+                        <p class="mb-0">
+                            Una opción para sistemas embebidos
+                            y proyectos profesionales avanzados.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     GIGA R1 WIFI
+========================================================= -->
+<section class="py-5 bg-light">
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-5">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center p-5">
+                        <div class="display-1">🤖</div>
+                        <h3 class="h4 fw-bold">
+                            Robótica conectada
+                        </h3>
+                        <p class="mb-0">
+                            Potencia y conectividad para proyectos
+                            avanzados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+
+                <span class="badge bg-dark mb-3">
+                    09 · AVANZADO
+                </span>
+
+                <h2 class="display-6 fw-bold">
+                    Arduino GIGA R1 WiFi
+                </h2>
+
+                <p>
+                    El <strong>Arduino GIGA R1 WiFi</strong> está diseñado
+                    para proyectos que necesitan bastantes recursos y
+                    conectividad.
+                </p>
+
+                <p>
+                    Combina un microcontrolador potente con
+                    <strong>Wi-Fi y Bluetooth</strong>.
+                </p>
+
+                <h3 class="h5 fw-bold">
+                    ¿Para qué sirve?
+                </h3>
+
+                <ul>
+                    <li>Robótica avanzada.</li>
+                    <li>Interfaces gráficas.</li>
+                    <li>IoT.</li>
+                    <li>Cámaras.</li>
+                    <li>Controladores.</li>
+                    <li>Proyectos multimedia.</li>
+                    <li>Automatización.</li>
+                </ul>
+
+                <div class="alert alert-dark">
+                    <strong>🚀 Proyecto recomendado:</strong>
+                    Robot inteligente controlado desde el celular.
+                    <br>
+                    Podés controlar movimiento, velocidad, luces,
+                    cámara y sensores, además de recibir información
+                    en tiempo real.
+                </div>
+
+                <span class="badge badge-accent">
+                    Dificultad: ⭐⭐⭐⭐⭐
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     NANO 33 IoT
+========================================================= -->
+<section class="py-5">
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-7">
+
+                <span class="badge bg-dark mb-3">
+                    10 · IoT COMPACTO
+                </span>
+
+                <h2 class="display-6 fw-bold">
+                    Arduino Nano 33 IoT
+                </h2>
+
+                <p>
+                    Es una versión moderna y pequeña orientada a proyectos
+                    <strong>IoT</strong>.
+                </p>
+
+                <p>
+                    Tiene conectividad inalámbrica, permitiendo crear
+                    dispositivos conectados a Internet sin necesitar
+                    necesariamente un módulo Wi-Fi externo.
+                </p>
+
+                <div class="alert alert-dark">
+                    <strong>🚀 Proyecto recomendado:</strong>
+                    Estación meteorológica conectada a Internet.
+                    <br><br>
+
+                    🌡️ Temperatura
+                    <br>
+                    💧 Humedad
+                    <br>
+                    🌬️ Presión atmosférica
+                    <br>
+                    ☀️ Luz
+                    <br><br>
+
+                    Los datos pueden enviarse a Internet.
+                </div>
+
+                <span class="badge badge-accent">
+                    Dificultad: ⭐⭐⭐⭐☆
+                </span>
+
+            </div>
+
+            <div class="col-lg-5">
+
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center p-5">
+
+                        <div class="display-1">
+                            🌐
+                        </div>
+
+                        <h3 class="h4 fw-bold">
+                            Estación conectada
+                        </h3>
+
+                        <p class="mb-0">
+                            Sensores + Arduino + Internet.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     NANO 33 BLE
+========================================================= -->
+<section class="py-5 bg-light">
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-5">
+
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center p-5">
+
+                        <div class="display-1">
+                            📱
+                        </div>
+
+                        <h3 class="h4 fw-bold">
+                            Bluetooth Low Energy
+                        </h3>
+
+                        <p class="mb-0">
+                            Comunicación inalámbrica con sensores
+                            y dispositivos.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-7">
+
+                <span class="badge bg-dark mb-3">
+                    11 · BLUETOOTH
+                </span>
+
+                <h2 class="display-6 fw-bold">
+                    Arduino Nano 33 BLE
+                </h2>
+
+                <p>
+                    Este modelo incorpora
+                    <strong>Bluetooth Low Energy (BLE)</strong> y un
+                    microcontrolador ARM.
+                </p>
+
+                <p>
+                    Es especialmente interesante para proyectos que
+                    necesitan comunicación inalámbrica y sensores.
+                </p>
+
+                <div class="alert alert-dark">
+                    <strong>🚀 Proyecto recomendado:</strong>
+                    Controlador inalámbrico para robots.
+                    <br>
+                    Podés conectar Arduino al teléfono mediante Bluetooth
+                    y controlar dirección, velocidad, luces y servomotores.
+                </div>
+
+                <span class="badge badge-accent">
+                    Dificultad: ⭐⭐⭐⭐☆
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     COMPARACIÓN
+========================================================= -->
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="section-head">
+
+            <span class="text-uppercase fw-bold small">
+                Comparativa
+            </span>
+
+            <h2 class="section-title">
+                📊 Comparación rápida
+            </h2>
+
+            <p class="section-note">
+                Una vista general para ayudarte a elegir.
+            </p>
+
+        </div>
+
+        <div class="table-responsive shadow-sm rounded-3">
+
+            <table class="table table-striped table-hover align-middle mb-0">
+
+                <thead class="table-dark">
+
+                    <tr>
+                        <th>Arduino</th>
+                        <th>Tamaño</th>
+                        <th>Potencia</th>
+                        <th>Conectividad</th>
+                        <th>Ideal para</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <th>Uno</th>
+                        <td>Mediano</td>
+                        <td>⭐⭐</td>
+                        <td>USB</td>
+                        <td>Aprender y proyectos generales</td>
+                    </tr>
+
+                    <tr>
+                        <th>Mega 2560</th>
+                        <td>Grande</td>
+                        <td>⭐⭐⭐</td>
+                        <td>USB / Serial</td>
+                        <td>Muchos sensores y componentes</td>
+                    </tr>
+
+                    <tr>
+                        <th>Nano</th>
+                        <td>Pequeño</td>
+                        <td>⭐⭐</td>
+                        <td>USB</td>
+                        <td>Proyectos compactos</td>
+                    </tr>
+
+                    <tr>
+                        <th>Leonardo</th>
+                        <td>Mediano</td>
+                        <td>⭐⭐</td>
+                        <td>USB</td>
+                        <td>Teclados, mouse y controles</td>
+                    </tr>
+
+                    <tr>
+                        <th>Micro</th>
+                        <td>Muy pequeño</td>
+                        <td>⭐⭐</td>
+                        <td>USB</td>
+                        <td>Dispositivos compactos</td>
+                    </tr>
+
+                    <tr>
+                        <th>Due</th>
+                        <td>Grande</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>USB / Serial</td>
+                        <td>Robótica avanzada</td>
+                    </tr>
+
+                    <tr>
+                        <th>MKR WiFi 1010</th>
+                        <td>Pequeño</td>
+                        <td>⭐⭐⭐</td>
+                        <td>Wi-Fi / BLE</td>
+                        <td>IoT</td>
+                    </tr>
+
+                    <tr>
+                        <th>Portenta H7</th>
+                        <td>Compacto</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>Varias</td>
+                        <td>Aplicaciones profesionales</td>
+                    </tr>
+
+                    <tr>
+                        <th>GIGA R1 WiFi</th>
+                        <td>Grande</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>Wi-Fi / BLE</td>
+                        <td>Robótica y proyectos avanzados</td>
+                    </tr>
+
+                    <tr>
+                        <th>Nano 33 IoT</th>
+                        <td>Pequeño</td>
+                        <td>⭐⭐⭐</td>
+                        <td>Wi-Fi / BLE</td>
+                        <td>IoT</td>
+                    </tr>
+
+                    <tr>
+                        <th>Nano 33 BLE</th>
+                        <td>Pequeño</td>
+                        <td>⭐⭐⭐</td>
+                        <td>BLE</td>
+                        <td>Sensores y dispositivos inalámbricos</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ¿CUÁL ELEGIR?
+========================================================= -->
+<section class="py-5 bg-dark text-white">
+
+    <div class="container">
+
+        <div class="section-head">
+
+            <span class="text-uppercase small fw-bold">
+                Guía rápida
+            </span>
+
+            <h2 class="display-6 fw-bold">
+                🏆 ¿Cuál Arduino elegir?
+            </h2>
+
+            <p class="text-white-50">
+                La mejor placa depende del proyecto que quieras construir.
+            </p>
+
+        </div>
+
+        <div class="row g-3">
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0">
+                    <div class="card-body p-4">
+                        <h3 class="h5 fw-bold">
+                            🥇 Para empezar
+                        </h3>
+                        <p class="display-6 fw-bold mb-0">
+                            Arduino Uno
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0">
+                    <div class="card-body p-4">
+                        <h3 class="h5 fw-bold">
+                            🔌 Para muchos sensores
+                        </h3>
+                        <p class="display-6 fw-bold mb-0">
+                            Mega 2560
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0">
+                    <div class="card-body p-4">
+                        <h3 class="h5 fw-bold">
+                            📦 Para algo pequeño
+                        </h3>
+                        <p class="display-6 fw-bold mb-0">
+                            Nano
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0">
+                    <div class="card-body p-4">
+                        <h3 class="h5 fw-bold">
+                            🎮 Para teclado o joystick
+                        </h3>
+                        <p class="display-6 fw-bold mb-0">
+                            Leonardo / Micro
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0">
+                    <div class="card-body p-4">
+                        <h3 class="h5 fw-bold">
+                            🌐 Para IoT
+                        </h3>
+                        <p class="display-6 fw-bold mb-0">
+                            Nano 33 IoT / MKR WiFi 1010
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0">
+                    <div class="card-body p-4">
+                        <h3 class="h5 fw-bold">
+                            🤖 Para robótica avanzada
+                        </h3>
+                        <p class="display-6 fw-bold mb-0">
+                            GIGA R1 WiFi / Due
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROYECTOS DESTACADOS
+========================================================= -->
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="section-head">
+
+            <h2 class="section-title">
+                💡 Proyectos que podés hacer
+            </h2>
+
+            <p class="section-note">
+                Ideas para poner en práctica lo aprendido.
+            </p>
+
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+            <div class="col">
+                <div class="card card-proyecto h-100">
+
+                    <div class="card-img-block">
+                        <div class="icon-circle">🤖</div>
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Robot autónomo
+                        </h5>
+
+                        <p class="card-text">
+                            Robot que detecta obstáculos y modifica
+                            automáticamente su trayectoria.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="badge bg-dark">
+                            Robótica
+                        </span>
+
+                        <span class="badge badge-accent">
+                            Avanzado
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card card-proyecto h-100">
+
+                    <div class="card-img-block">
+                        <div class="icon-circle">🌱</div>
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Riego automático
+                        </h5>
+
+                        <p class="card-text">
+                            Sistema que controla una bomba de agua
+                            utilizando un sensor de humedad del suelo.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="badge bg-dark">
+                            Automatización
+                        </span>
+
+                        <span class="badge badge-accent">
+                            Principiante
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card card-proyecto h-100">
+
+                    <div class="card-img-block">
+                        <div class="icon-circle">🏠</div>
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Casa inteligente
+                        </h5>
+
+                        <p class="card-text">
+                            Sensores y dispositivos conectados para
+                            controlar diferentes elementos del hogar.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="badge bg-dark">
+                            IoT
+                        </span>
+
+                        <span class="badge badge-accent">
+                            Intermedio
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card card-proyecto h-100">
+
+                    <div class="card-img-block">
+                        <div class="icon-circle">🌡️</div>
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Estación meteorológica
+                        </h5>
+
+                        <p class="card-text">
+                            Medición de temperatura, humedad, presión
+                            atmosférica y luz.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="badge bg-dark">
+                            Sensores
+                        </span>
+
+                        <span class="badge badge-accent">
+                            Intermedio
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card card-proyecto h-100">
+
+                    <div class="card-img-block">
+                        <div class="icon-circle">🚗</div>
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Auto controlado por celular
+                        </h5>
+
+                        <p class="card-text">
+                            Vehículo robot controlado mediante una
+                            conexión inalámbrica.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="badge bg-dark">
+                            Bluetooth
+                        </span>
+
+                        <span class="badge badge-accent">
+                            Intermedio
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card card-proyecto h-100">
+
+                    <div class="card-img-block">
+                        <div class="icon-circle">🎮</div>
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Controlador personalizado
+                        </h5>
+
+                        <p class="card-text">
+                            Teclado, joystick o macropad personalizado
+                            para controlar una computadora.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <span class="badge bg-dark">
+                            USB
+                        </span>
+
+                        <span class="badge badge-accent">
+                            Intermedio
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CTA FINAL
+========================================================= -->
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center">
+
+            <h2 class="display-6 fw-bold">
+                🚀 Elegí tu placa y empezá a construir
+            </h2>
+
+            <p class="lead">
+                Desde un simple LED hasta robots, sistemas IoT
+                y aplicaciones avanzadas.
+            </p>
+
+            <a href="{% url 'inicio' %}" class="btn btn-dark btn-lg">
+                Volver al inicio →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+{% endblock %}
+```

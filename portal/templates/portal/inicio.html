@@ -1,0 +1,830 @@
+{% extends 'portal/base.html' %}
+{% block title %}Inicio - ArduinoHub{% endblock %}
+{% block content %}
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center g-4">
+
+            <div class="col-lg-7">
+                <span class="badge bg-dark mb-3">
+                    ARDUINO · APRENDER HACIENDO
+                </span>
+
+                <h1 class="display-3 fw-bold">
+                    Primer proyecto.<br>
+                    Aprendé construyendo.
+                </h1>
+
+                <p class="lead mt-3">
+                    Guías prácticas para aprender programación, electrónica
+                    y robótica con Arduino desde cero.
+                </p>
+
+                <a href="{% url 'proyectos' %}" class="btn btn-dark btn-lg mt-2">
+                    Ver proyectos →
+                </a>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+
+                    <!-- Podés reemplazar esta imagen por una de tus imágenes -->
+                    <img
+                        src="https://images.openai.com/static-rsc-4/IRB-G0twaC3Sd-F0n98UabYodMwXd3ThiCclWHJLzcYQWZEp5FFKr6ZDh7ZKwld65fpJBaLskhPmmMWdspYXI3cYLHJNfOOwHf-fMbzRn8LLdRjCj-pJPFNjDrI35umiNKlSjeqG52TckoDzqw8toI1OQ2cZsx2R0oRPvlybTX-QugyrdxAhkaAVy91QPqPw?purpose=fullsize"
+                        class="img-fluid"
+                        alt="Placa Arduino"
+                    >
+
+                    <div class="card-body p-4">
+                        <div class="display-5 mb-2">🔌</div>
+
+                        <h2 class="h3 fw-bold">
+                            ¿Qué es Arduino?
+                        </h2>
+
+                        <p class="mb-0">
+                            Arduino es una plataforma de
+                            <strong>hardware y software de código abierto</strong>.
+                            Permite programar una pequeña placa electrónica para
+                            controlar luces LED, motores, sensores, pantallas,
+                            robots y muchos otros dispositivos.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================================================
+     ¿QUÉ ES ARDUINO?
+========================================================= -->
+<section class="py-5 bg-light">
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <span class="text-uppercase fw-bold small">
+                    Introducción
+                </span>
+
+                <h2 class="display-6 fw-bold mt-2">
+                    Una pequeña placa para crear grandes proyectos
+                </h2>
+
+                <p>
+                    Arduino permite combinar programación y electrónica de
+                    una manera sencilla. La placa recibe información de
+                    sensores, procesa esos datos y puede controlar distintos
+                    componentes electrónicos.
+                </p>
+
+                <p>
+                    Por eso se utiliza para aprender electrónica, programación,
+                    robótica, automatización, Internet de las cosas (IoT),
+                    prototipado y proyectos interactivos.
+                </p>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="row g-3">
+
+                    <div class="col-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="display-5">💡</div>
+                                <h3 class="h5 fw-bold mt-3">
+                                    Electrónica
+                                </h3>
+                                <p class="small mb-0">
+                                    Controlá componentes y circuitos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="display-5">💻</div>
+                                <h3 class="h5 fw-bold mt-3">
+                                    Programación
+                                </h3>
+                                <p class="small mb-0">
+                                    Programá el comportamiento de tus proyectos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="display-5">🤖</div>
+                                <h3 class="h5 fw-bold mt-3">
+                                    Robótica
+                                </h3>
+                                <p class="small mb-0">
+                                    Construí robots y sistemas autónomos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="display-5">⚙️</div>
+                                <h3 class="h5 fw-bold mt-3">
+                                    Automatización
+                                </h3>
+                                <p class="small mb-0">
+                                    Automatizá tareas y dispositivos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     QUIÉN CREÓ ARDUINO
+========================================================= -->
+<section class="py-5">
+    <div class="container">
+
+        <div class="section-head">
+            <span class="text-uppercase fw-bold small">
+                Historia
+            </span>
+
+            <h2 class="section-title">
+                👨‍💻 ¿Quién creó Arduino?
+            </h2>
+
+            <p class="section-note">
+                Arduino no fue creado por una sola persona.
+            </p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+
+            <div class="col-lg-7">
+
+                <p>
+                    Arduino nació en <strong>2005</strong> en el
+                    <strong>Interaction Design Institute Ivrea (IDII)</strong>,
+                    en Ivrea, Italia, a partir del trabajo de varias personas.
+                </p>
+
+                <div class="row g-3">
+
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body">
+                                <h3 class="h5 fw-bold">
+                                    Massimo Banzi
+                                </h3>
+                                <p class="small mb-0">
+                                    Profesor y diseñador italiano; uno de los
+                                    principales impulsores y cofundadores.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body">
+                                <h3 class="h5 fw-bold">
+                                    David Cuartielles
+                                </h3>
+                                <p class="small mb-0">
+                                    Ingeniero español y profesor que participó
+                                    en el desarrollo de la plataforma.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body">
+                                <h3 class="h5 fw-bold">
+                                    David Mellis
+                                </h3>
+                                <p class="small mb-0">
+                                    Estudiante del IDII que trabajó en el
+                                    software y desarrollo de Arduino.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body">
+                                <h3 class="h5 fw-bold">
+                                    Tom Igoe
+                                </h3>
+                                <p class="small mb-0">
+                                    Profesor estadounidense que posteriormente
+                                    se incorporó al equipo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body">
+                                <h3 class="h5 fw-bold">
+                                    Gianluca Martino
+                                </h3>
+                                <p class="small mb-0">
+                                    Participó especialmente en el desarrollo
+                                    y fabricación del hardware.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-5">
+
+                <div class="card border-0 shadow-sm h-100">
+
+                    <img
+                        src="https://images.openai.com/static-rsc-4/EgRsCN4UFm4omxTYr4AnBuuZsNdQLW8SUppSQfefvjmDwc-tdPWHbKZe0p74bCC9pzXhhan1p5XSGeuC0wb9z08ziGEzh3uIEu_4dcqizCCgVyaZaXTtbv7jpAyMniqKBaEPggk5gY2zwIL33v5Ab5lO1c92_luvzUNqRPKhmoOR8WAnm_qAoL5CJx6qTSQl?purpose=fullsize"
+                        class="card-img-top"
+                        alt="Arduino"
+                    >
+
+                    <div class="card-body p-4">
+
+                        <h3 class="h4 fw-bold">
+                            ⚠️ Una parte importante de la historia
+                        </h3>
+
+                        <p>
+                            Antes de Arduino existió
+                            <strong>Wiring</strong>, creado por
+                            <strong>Hernando Barragán</strong>,
+                            diseñador y programador colombiano.
+                        </p>
+
+                        <p>
+                            En <strong>2003</strong>, Barragán desarrolló
+                            Wiring como proyecto de tesis de maestría en el
+                            mismo instituto italiano.
+                        </p>
+
+                        <p class="mb-0">
+                            Su objetivo era hacer que trabajar con electrónica
+                            fuera mucho más sencillo para artistas y diseñadores
+                            que no fueran ingenieros.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     WIRING
+========================================================= -->
+<section class="py-5 bg-light">
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-5">
+
+                <img
+                    src="https://images.openai.com/static-rsc-4/UD54Jt0JvHTAusosDHsVYeMUAsbzfWjyxSlVIGC-rO4ZY31ghllf8GmK7qedURvsYVtLG-qienY3jKMCwvh5_rde6Mb052eolzFkKxrmWprhjUwhlATUQVnqj8tEY3gUkJEYCpbTUWAJkIn5MGIC9-YOby5TR_f1k6oJ-Xfewag67Fui5zEzC5DrF4MOCQZA?purpose=fullsize"
+                    class="img-fluid rounded-4 shadow-sm"
+                    alt="Historia de Arduino y Wiring"
+                >
+
+            </div>
+
+            <div class="col-lg-7">
+
+                <span class="text-uppercase fw-bold small">
+                    El antecedente
+                </span>
+
+                <h2 class="display-6 fw-bold mt-2">
+                    Arduino y Wiring
+                </h2>
+
+                <p>
+                    En 2005, Banzi, Mellis y Cuartielles trabajaron con Wiring
+                    y añadieron soporte para un microcontrolador más económico,
+                    el <strong>ATmega8</strong>.
+                </p>
+
+                <p>
+                    Después comenzaron un proyecto separado que pasó a llamarse
+                    <strong>Arduino</strong>.
+                </p>
+
+                <div class="alert alert-warning mt-4">
+                    <strong>Importante:</strong>
+                    decir simplemente que “Massimo Banzi inventó Arduino”
+                    es una simplificación. Banzi fue fundamental, pero Arduino
+                    surgió del trabajo de un equipo y se apoyó fuertemente en
+                    el trabajo previo de Hernando Barragán y Wiring.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     POR QUÉ ARDUINO
+========================================================= -->
+<section class="py-5">
+    <div class="container">
+
+        <div class="section-head">
+            <h2 class="section-title">
+                💡 ¿Por qué crearon Arduino?
+            </h2>
+
+            <p class="section-note">
+                La idea era crear una herramienta económica, sencilla y
+                accesible para aprender y experimentar con electrónica.
+            </p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+            <div class="col">
+                <div class="feature-block h-100">
+                    <div class="feature-icon">💰</div>
+                    <h3>Barata</h3>
+                    <p>
+                        Una alternativa económica frente a sistemas de
+                        desarrollo que podían costar alrededor de 100 dólares.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="feature-block h-100">
+                    <div class="feature-icon">🧑‍🎓</div>
+                    <h3>Para estudiantes</h3>
+                    <p>
+                        Pensada para que los estudiantes pudieran experimentar
+                        sin necesitar conocimientos avanzados de electrónica.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="feature-block h-100">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Fácil de programar</h3>
+                    <p>
+                        Su objetivo era simplificar el desarrollo de proyectos
+                        electrónicos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="feature-block h-100">
+                    <div class="feature-icon">💻</div>
+                    <h3>Multiplataforma</h3>
+                    <p>
+                        Compatible con diferentes computadoras para facilitar
+                        el acceso a la plataforma.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="feature-block h-100">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Para artistas y diseñadores</h3>
+                    <p>
+                        Una herramienta para crear proyectos interactivos sin
+                        necesitar ser especialista en electrónica.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="feature-block h-100">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Código abierto</h3>
+                    <p>
+                        Una plataforma abierta para aprender, experimentar y
+                        desarrollar nuevos proyectos.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     ORIGEN DEL NOMBRE
+========================================================= -->
+<section class="py-5 bg-dark text-white">
+
+    <div class="container">
+
+        <div class="row align-items-center g-4">
+
+            <div class="col-lg-8">
+
+                <span class="text-uppercase small fw-bold">
+                    Una curiosidad
+                </span>
+
+                <h2 class="display-6 fw-bold mt-2">
+                    🏷️ ¿De dónde viene el nombre “Arduino”?
+                </h2>
+
+                <p class="lead">
+                    El nombre <strong>Arduino</strong> viene de un bar de
+                    Ivrea llamado <strong>Bar di Re Arduino</strong>.
+                </p>
+
+                <p>
+                    Massimo Banzi y otros miembros del proyecto solían
+                    reunirse allí.
+                </p>
+
+                <p class="mb-0">
+                    El bar recibió su nombre en honor a
+                    <strong>Arduino de Ivrea</strong>, quien fue rey de
+                    Italia a comienzos del siglo XI.
+                </p>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="text-center">
+                    <div class="display-1">🍻</div>
+                    <p class="small mb-0">
+                        Una de las historias más curiosas detrás del nombre
+                        de la plataforma.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     LÍNEA DE TIEMPO
+========================================================= -->
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="section-head">
+            <h2 class="section-title">
+                🗓️ Línea de tiempo
+            </h2>
+
+            <p class="section-note">
+                Desde Wiring hasta la expansión de Arduino en la comunidad maker.
+            </p>
+        </div>
+
+        <div class="table-responsive shadow-sm rounded-3">
+
+            <table class="table table-striped table-hover align-middle mb-0">
+
+                <thead class="table-dark">
+
+                    <tr>
+                        <th style="width: 150px;">Año</th>
+                        <th>Qué ocurrió</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <th>2003</th>
+                        <td>
+                            Hernando Barragán desarrolla
+                            <strong>Wiring</strong> como tesis en el IDII.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>2004</th>
+                        <td>
+                            Wiring comienza a utilizarse en proyectos
+                            del instituto.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>2005</th>
+                        <td>
+                            Banzi, Cuartielles y Mellis desarrollan una
+                            versión más económica y nace Arduino como
+                            proyecto separado.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>2005</th>
+                        <td>
+                            Se fabrican los primeros prototipos de Arduino.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>2006</th>
+                        <td>
+                            Arduino empieza a recibir reconocimiento
+                            internacional.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>2009</th>
+                        <td>
+                            El proyecto gana una enorme popularidad entre
+                            la comunidad maker.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>2010</th>
+                        <td>
+                            Aparece el <strong>Arduino Uno</strong>,
+                            que se convertiría en una de las placas
+                            más populares.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Actualidad</th>
+                        <td>
+                            Arduino se utiliza en educación, robótica,
+                            automatización, IoT, arte interactivo,
+                            prototipado y muchísimos proyectos.
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PARA QUÉ SIRVE
+========================================================= -->
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="section-head">
+
+            <h2 class="section-title">
+                🤖 ¿Para qué sirve Arduino?
+            </h2>
+
+            <p class="section-note">
+                Arduino permite conectar sensores, procesar información
+                y controlar diferentes dispositivos.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-6">
+
+                <div class="card border-0 shadow-sm h-100">
+
+                    <div class="card-body p-4">
+
+                        <span class="badge bg-dark mb-3">
+                            EJEMPLO 01
+                        </span>
+
+                        <h3 class="h4 fw-bold">
+                            Sensor de luz → Arduino → LED
+                        </h3>
+
+                        <div class="my-4 text-center fs-2">
+                            🌑 → 🔌 → 💡
+                        </div>
+
+                        <p class="mb-0">
+                            El sensor detecta que está oscuro →
+                            Arduino recibe esa información →
+                            Arduino enciende el LED.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="card border-0 shadow-sm h-100">
+
+                    <div class="card-body p-4">
+
+                        <span class="badge bg-dark mb-3">
+                            EJEMPLO 02
+                        </span>
+
+                        <h3 class="h4 fw-bold">
+                            Sensor de distancia → motor → robot
+                        </h3>
+
+                        <div class="my-4 text-center fs-2">
+                            📡 → 🔌 → 🤖
+                        </div>
+
+                        <p class="mb-0">
+                            El sensor detecta un obstáculo →
+                            Arduino procesa la información →
+                            Arduino ordena al motor cambiar de dirección.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="alert alert-dark mt-4">
+
+            <strong>En resumen:</strong>
+            Arduino se volvió muy popular para aprender
+            <strong>programación + electrónica + robótica</strong>.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ÁREAS DE APRENDIZAJE
+========================================================= -->
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="section-head">
+
+            <h2 class="section-title">
+                Áreas de Aprendizaje
+            </h2>
+
+            <p class="section-note">
+                Elegí una ruta y empezá a construir con guías pensadas
+                para cada nivel.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="feature-block h-100">
+
+                    <div class="feature-icon">
+                        🔧
+                    </div>
+
+                    <h3>
+                        Sensores
+                    </h3>
+
+                    <p>
+                        Conectá y programá sensores de temperatura,
+                        luz, movimiento y más.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="feature-block h-100">
+
+                    <div class="feature-icon">
+                        ⚙️
+                    </div>
+
+                    <h3>
+                        Automatización
+                    </h3>
+
+                    <p>
+                        Creá sistemas automáticos de riego,
+                        iluminación y control domótico.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="feature-block h-100">
+
+                    <div class="feature-icon">
+                        🤖
+                    </div>
+
+                    <h3>
+                        Robótica
+                    </h3>
+
+                    <p>
+                        Diseñá robots seguidores de línea,
+                        brazos robóticos y vehículos autónomos.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+
+            <a href="{% url 'proyectos' %}" class="btn btn-dark btn-lg">
+                Explorar proyectos →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
+```

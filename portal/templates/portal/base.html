@@ -1,0 +1,110 @@
+{% load static %}
+{% load django_bootstrap5 %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        {% block title %}ArduinoHub{% endblock %}
+    </title>
+
+    <!-- Bootstrap 5 -->
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="{% static 'portal/css/estatic.css' %}">
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- ========================= -->
+    <!-- LOADER -->
+    <!-- ========================= -->
+
+    <div id="loader-container">
+
+        <span class="loader"></span>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- TOPBAR -->
+    <!-- ========================= -->
+
+    <div class="topbar"></div>
+
+
+    <!-- ========================= -->
+    <!-- NAVBAR -->
+    <!-- ========================= -->
+
+    {% include 'portal/navbar.html' %}
+
+
+    <!-- ========================= -->
+    <!-- SUB-BANNER -->
+    <!-- ========================= -->
+
+    <div class="subbanner"></div>
+
+
+    <!-- ========================= -->
+    <!-- CONTENIDO -->
+    <!-- ========================= -->
+
+    <main class="flex-grow-1">
+
+        {% block content %}
+        {% endblock %}
+
+    </main>
+
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
+    <footer class="text-center py-3 mt-auto">
+
+        <small>
+            ArduinoHub - trabajo realizado por Ignacio Schneider
+        </small>
+
+    </footer>
+
+
+    <!-- ========================= -->
+    <!-- SCRIPT DEL LOADER -->
+    <!-- ========================= -->
+
+    <script>
+
+        window.addEventListener("load", function () {
+
+            const loader =
+                document.getElementById("loader-container");
+
+            loader.style.opacity = "0";
+
+            setTimeout(function () {
+
+                loader.style.display = "none";
+
+            }, 500);
+
+        });
+
+    </script>
+
+</body>
+
+</html>
