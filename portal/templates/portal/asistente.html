@@ -1,0 +1,144 @@
+{% extends 'portal/base.html' %}
+
+{% block title %}Asistente ArduinoHub{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <h1 class="text-center mb-4">
+        🤖 Asistente ArduinoHub
+    </h1>
+
+    <div class="card shadow mx-auto" style="max-width: 700px;">
+
+        <div class="card-body">
+
+            <div id="chat"
+                 class="mb-3 p-3"
+                 style="height: 400px; overflow-y: auto; background: #f5f5f5; border-radius: 10px;">
+
+                <div class="mb-3">
+                    <strong>🤖 ArduinoHub:</strong>
+                    <p>
+                        ¡Hola! Soy el asistente de ArduinoHub.
+                        Preguntame sobre Arduino, programación o electrónica.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="input-group">
+
+                <input
+                    type="text"
+                    id="pregunta"
+                    class="form-control"
+                    placeholder="Escribí tu pregunta..."
+                >
+
+                <button
+                    class="btn btn-primary"
+                    onclick="enviarPregunta()">
+                    Enviar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+async function enviarPregunta() {
+
+    const input = document.getElementById("pregunta");
+    const chat = document.getElementById("chat");
+
+    const pregunta = input.value.trim();
+
+    if (!pregunta) {
+        return;
+    }
+
+    chat.innerHTML += `
+        <div class="mb-3">
+            <strong>👤 Vos:</strong>
+            <p>${pregunta}</p>
+        </div>
+    `;
+
+    input.value = "";
+
+    chat.innerHTML += `
+        <div id="cargando" class="mb-3">
+            <strong>🤖 ArduinoHub:</strong>
+            <p>Escribiendo...</p>
+        </div>
+    `;
+
+    chat.scrollTop = chat.scrollHeight;
+
+    try {
+
+        const response = await fetch("/asistente/", {
+
+            method: "POST",
+
+            headers: {
+                "Content-Type": "application/json"
+            },
+
+            body: JSON.stringify({
+                pregunta: pregunta
+            })
+
+        });
+
+        const data = await response.json();
+
+        document.getElementById("cargando").remove();
+
+        if (data.respuesta) {
+
+            chat.innerHTML += `
+                <div class="mb-3">
+                    <strong>🤖 ArduinoHub:</strong>
+                    <p>${data.respuesta}</p>
+                </div>
+            `;
+
+        } else {
+
+            chat.innerHTML += `
+                <div class="mb-3">
+                    <strong>❌ Error:</strong>
+                    <p>${data.error}</p>
+                </div>
+            `;
+
+        }
+
+    } catch (error) {
+
+        document.getElementById("cargando").remove();
+
+        chat.innerHTML += `
+            <div class="mb-3">
+                <strong>❌ Error:</strong>
+                <p>No se pudo conectar con el asistente.</p>
+            </div>
+        `;
+
+    }
+
+    chat.scrollTop = chat.scrollHeight;
+}
+
+</script>
+
+{% endblock %}
